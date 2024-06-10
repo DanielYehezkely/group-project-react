@@ -1,4 +1,4 @@
-import HomePage from "./pages/HomePage1/HomePage"
+import HomePage from "./pages/HomePage/HomePage"
 
 
 
