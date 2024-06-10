@@ -1,9 +1,9 @@
 import React from "react";
 
-import './singlePokemon.css'
+import './SinglePokemon.css'
 
-const singlePokemon = () => {
+const SinglePokemon = () => {
   return <div>singlePokemon</div>;
 };
 
-export default singlePokemon;
+export default SinglePokemon;

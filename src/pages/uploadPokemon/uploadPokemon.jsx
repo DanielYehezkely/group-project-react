@@ -1,9 +1,9 @@
 import React from "react";
 
-import './uploadPokemon.css'
+import './UploadPokemon.css'
 
-const uploadPokemon = () => {
+const UploadPokemon = () => {
   return <div>uploadPokemon</div>;
 };
 
-export default uploadPokemon;
+export default UploadPokemon;
