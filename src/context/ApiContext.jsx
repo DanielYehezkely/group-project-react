@@ -26,31 +26,31 @@ export const ApiProvider = ({ children }) => {
     fetchPokemonsData();
   }, []);
 
-const catchPokemon = async (pokemon) => {
-  setIsLoading(true)
-  try {
-    const result = await addPokemon(pokemon);
-    await fetchPokemonsData()
-  } catch (error) {
-    setErrorMessage(error)
-  } finally{
-    isLoading(false)
-}
-}
+  const catchPokemon = async (pokemon) => {
+    setIsLoading(true)
+    try {
+      const result = await addPokemon(pokemon);
+      await fetchPokemonsData()
+    } catch (error) {
+      setErrorMessage(error)
+    } finally {
+      isLoading(false)
+    }
+  }
 
-const deletePokemonData = async (pokemon) => {
-try {
-  const result = await deletePokemon(pokemon)
-  await fetchPokemonsData()
-} catch (error) {
-  setErrorMessage(error)
-} finally {
-  isLoading(false)
-}
-}
+  const deletePokemonData = async (pokemon) => {
+    try {
+      const result = await deletePokemon(pokemon)
+      await fetchPokemonsData()
+    } catch (error) {
+      setErrorMessage(error)
+    } finally {
+      isLoading(false)
+    }
+  }
 
-// why we pass it as object            vvvvvvv
-  return <ApiContext.Provider value={{pokemons, catchPokemon, deletePokemonData}} >  
+  // why we pass it as object            vvvvvvv
+  return <ApiContext.Provider value={{ pokemons, catchPokemon, deletePokemonData }} >
     {children}
   </ApiContext.Provider>
 };
