@@ -2,20 +2,14 @@ import React from "react";
 
 import { useApiContext } from "../../context/ApiContext";
 
-import './HomePage.css'
-
+import "./HomePage.css";
 
 const HomePage = () => {
-
   const { pokemons } = useApiContext();
 
-  return (
-  <div>
-    
-  </div>
+  const i = 10;
 
-  ) 
-
+  return <div></div>;
 };
 
 export default HomePage;
