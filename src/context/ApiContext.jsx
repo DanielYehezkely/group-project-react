@@ -34,7 +34,7 @@ export const ApiProvider = ({ children }) => {
     } catch (error) {
       setErrorMessage(error)
     } finally {
-      isLoading(false)
+      setIsLoading(false)
     }
   }
 
@@ -45,12 +45,12 @@ export const ApiProvider = ({ children }) => {
     } catch (error) {
       setErrorMessage(error)
     } finally {
-      isLoading(false)
+      setIsLoading(false)
     }
   }
 
   // why we pass it as object            vvvvvvv
-  return <ApiContext.Provider value={{ pokemons, catchPokemon, deletePokemonData }} >
+  return <ApiContext.Provider value={{ pokemons, catchPokemon, deletePokemonData, errorMessage, isLoading}} >
     {children}
   </ApiContext.Provider>
 };
