@@ -1,7 +1,5 @@
-
 import { createContext, useState, useContext, useEffect } from "react";
 import { addPokemon, getPokemons, deletePokemon } from "../api/api";
-
 
 const ApiContext = createContext();
 
@@ -50,12 +48,6 @@ try {
   isLoading(false)
 }
 }
-
-
-
-
-
-
 
 // why we pass it as object            vvvvvvv
   return <ApiContext.Provider value={{pokemons, catchPokemon, deletePokemonData}} >  
