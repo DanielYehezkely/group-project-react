@@ -1,6 +1,6 @@
 import React from "react";
 
-import './SinglePokemon.css'
+import './singlePokemon.css'
 
 const SinglePokemon = () => {
   return <div>singlePokemon</div>;
