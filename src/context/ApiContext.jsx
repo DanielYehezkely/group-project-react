@@ -32,7 +32,7 @@ export const ApiProvider = ({ children }) => {
     } catch (error) {
       setErrorMessage(error);
     } finally {
-      setIsLoading(false);
+      isLoading(false);
     }
   };
 
